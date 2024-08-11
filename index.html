@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/leaves.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trash Tutor: Your AI-Powered Waste Sorting Guide</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bn6rYxkp.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <h1>Trash</h1>
+        <img src="/assets/logo-BkFme-hA.png" alt="Trash Tutor Logo" />
+        <h1>Tutor</h1>
+      </div>
+      <a
+        href="https://github.com/Aphanite/trash-tutor-web"
+        class="header-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        View on
+        <img
+          id="github-icon"
+          src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23f8faed'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20className='feather%20feather-github'%20%3e%3cpath%20d='M9%2019c-5%201.5-5-2.5-7-3m14%206v-3.87a3.37%203.37%200%200%200-.94-2.61c3.14-.35%206.44-1.54%206.44-7A5.44%205.44%200%200%200%2020%204.77%205.07%205.07%200%200%200%2019.91%201S18.73.65%2016%202.48a13.38%2013.38%200%200%200-7%200C6.27.65%205.09%201%205.09%201A5.07%205.07%200%200%200%205%204.77a5.44%205.44%200%200%200-1.5%203.78c0%205.42%203.3%206.61%206.44%207A3.37%203.37%200%200%200%209%2018.13V22'%3e%3c/path%3e%3c/svg%3e"
+          alt="Trash Tutor GitHub page"
+        />
+      </a>
+    </div>
+    <div class="container">
+      <div class="hero">
+        <h2 class="credit">
+          An open-source project by
+          <a
+            href="https://aphanite.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ena Rajović</a
+          >
+        </h2>
+        <h1>AI-Powered Waste Sorting</h1>
+
+        <h2 class="subtitle">
+          Snap a pic, sort your waste. <br />
+          Simplify recycling and disposal <strong>anywhere</strong>, anytime.
+        </h2>
+        <a
+          href="https://app.trashtutor.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta"
+          >Try it out
+        </a>
+      </div>
+
+      <div class="video-container">
+        <div class="steps">
+          <img src="/assets/camera-CYgD6OaX.webp" alt="Camera" class="img" />
+          <img src="/assets/arrow-BlBxd9sI.png" alt="arrow" class="arrow" />
+          <img
+            src="/assets/result-DaRcv9SS.webp"
+            alt="Recycling result"
+            class="img result"
+          />
+          <button
+            class="demo-button"
+            aria-label="Watch the Trash Tutor demo"
+            onclick="showVideo()"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23083833'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-play'%3e%3cpolygon%20points='5%203%2019%2012%205%2021%205%203'%3e%3c/polygon%3e%3c/svg%3e"
+              alt="play button"
+              class="icon"
+            />
+            <p>Watch demo</p>
+          </button>
+        </div>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/SAqTNPLJhNQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="display: none"
+        ></iframe>
+      </div>
+
+      <div class="teaser">
+        <div class="teaser-title">
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23f16622'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-pen-tool'%3e%3cpath%20d='M12%2019l7-7%203%203-7%207-3-3z'%3e%3c/path%3e%3cpath%20d='M18%2013l-1.5-7.5L2%202l3.5%2014.5L13%2018l5-5z'%3e%3c/path%3e%3cpath%20d='M2%202l7.586%207.586'%3e%3c/path%3e%3ccircle%20cx='11'%20cy='11'%20r='2'%3e%3c/circle%3e%3c/svg%3e"
+            alt="Pen"
+            width="25px"
+            style="margin-left: -32px"
+          />
+          <h3>Featured</h3>
+        </div>
+        Curious how I did it? Read my post
+        <a
+          class="blog-link"
+          href="https://open.substack.com/pub/aphanite/p/less-is-more-even-when-prompting?r=1njm0g&utm_campaign=post&utm_medium=web"
+          ><strong> 'Less is more - even when prompting'</strong>
+        </a>
+        <p>
+          on my journey to the final prompt and the lessons learned along the
+          way!
+        </p>
+      </div>
+
+      <section id="tech-stack">
+        <h3>Technologies used</h3>
+        <ul class="tech-list">
+          <li>
+            <img
+              src="/assets/react-D4KSTTgt.svg"
+              alt="React icon"
+              class="icon"
+            />
+            <p>React</p>
+          </li>
+          <li>
+            <img
+              src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20width='36px'%20height='36px'%20viewBox='0%200%2024%2024'%20role='img'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctitle%3eOpenAI%20icon%3c/title%3e%3cpath%20d='M22.2819%209.8211a5.9847%205.9847%200%200%200-.5157-4.9108%206.0462%206.0462%200%200%200-6.5098-2.9A6.0651%206.0651%200%200%200%204.9807%204.1818a5.9847%205.9847%200%200%200-3.9977%202.9%206.0462%206.0462%200%200%200%20.7427%207.0966%205.98%205.98%200%200%200%20.511%204.9107%206.051%206.051%200%200%200%206.5146%202.9001A5.9847%205.9847%200%200%200%2013.2599%2024a6.0557%206.0557%200%200%200%205.7718-4.2058%205.9894%205.9894%200%200%200%203.9977-2.9001%206.0557%206.0557%200%200%200-.7475-7.0729zm-9.022%2012.6081a4.4755%204.4755%200%200%201-2.8764-1.0408l.1419-.0804%204.7783-2.7582a.7948.7948%200%200%200%20.3927-.6813v-6.7369l2.02%201.1686a.071.071%200%200%201%20.038.052v5.5826a4.504%204.504%200%200%201-4.4945%204.4944zm-9.6607-4.1254a4.4708%204.4708%200%200%201-.5346-3.0137l.142.0852%204.783%202.7582a.7712.7712%200%200%200%20.7806%200l5.8428-3.3685v2.3324a.0804.0804%200%200%201-.0332.0615L9.74%2019.9502a4.4992%204.4992%200%200%201-6.1408-1.6464zM2.3408%207.8956a4.485%204.485%200%200%201%202.3655-1.9728V11.6a.7664.7664%200%200%200%20.3879.6765l5.8144%203.3543-2.0201%201.1685a.0757.0757%200%200%201-.071%200l-4.8303-2.7865A4.504%204.504%200%200%201%202.3408%207.872zm16.5963%203.8558L13.1038%208.364%2015.1192%207.2a.0757.0757%200%200%201%20.071%200l4.8303%202.7913a4.4944%204.4944%200%200%201-.6765%208.1042v-5.6772a.79.79%200%200%200-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759%200%200%200-.7854%200L9.409%209.2297V6.8974a.0662.0662%200%200%201%20.0284-.0615l4.8303-2.7866a4.4992%204.4992%200%200%201%206.6802%204.66zM8.3065%2012.863l-2.02-1.1638a.0804.0804%200%200%201-.038-.0567V6.0742a4.4992%204.4992%200%200%201%207.3757-3.4537l-.142.0805L8.704%205.459a.7948.7948%200%200%200-.3927.6813zm1.0976-2.3654l2.602-1.4998%202.6069%201.4998v2.9994l-2.5974%201.4997-2.6067-1.4997Z'/%3e%3c/svg%3e"
+              alt="OpenAI icon"
+              class="icon"
+            />
+            <p>OpenAI's API</p>
+          </li>
+          <li>
+            <img
+              src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='36px'%20height='36px'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.1725%202.29872C16.4627%201.89953%2015.5373%201.90132%2014.8269%202.29872C11.2689%204.26227%207.71082%206.22641%204.15216%208.18906C3.45969%208.55335%202.99264%209.29698%203.00009%2010.0688V21.9328C2.99509%2022.7197%203.48622%2023.4705%204.19655%2023.8298C5.21871%2024.3736%206.2118%2024.9726%207.25244%2025.4802C8.45451%2026.0709%209.95843%2026.2015%2011.1752%2025.5855C12.1629%2025.075%2012.6016%2023.9395%2012.6003%2022.896C12.6083%2018.9806%2012.6016%2015.0651%2012.6034%2011.1496C12.6269%2010.9756%2012.4962%2010.7896%2012.3064%2010.7938C11.8517%2010.7866%2011.3964%2010.7896%2010.9417%2010.7926C10.7699%2010.7764%2010.6022%2010.9191%2010.6152%2011.0918C10.6091%2014.982%2010.6164%2018.8734%2010.6115%2022.7642C10.6214%2023.3024%2010.2578%2023.8196%209.73913%2024.0014C8.5412%2024.4213%205.12198%2022.2012%205.12198%2022.2012C4.9965%2022.1431%204.91682%2022.007%204.92912%2021.8718C4.92912%2017.9576%204.92973%2014.0433%204.92912%2010.1297C4.91187%209.97191%205.00912%209.8298%205.15402%209.76538C8.70033%207.8134%2012.2448%205.85654%2015.7911%203.90336C15.9143%203.82115%2016.086%203.8214%2016.2089%203.90396C19.7552%205.85654%2023.3003%207.81161%2026.8472%209.76368C26.9926%209.828%2027.0857%209.9725%2027.0709%2010.1297C27.0703%2014.0433%2027.0721%2017.9576%2027.0697%2021.8713C27.0802%2022.0098%2027.0086%2022.144%2026.8793%2022.2048C23.3661%2024.1462%2019.8129%2026.025%2016.3315%2028.0228C16.1796%2028.1099%2016.0075%2028.2086%2015.8373%2028.1126C14.9218%2027.6062%2014.0174%2027.0801%2013.1049%2026.5688C13.0057%2026.5069%2012.8794%2026.4803%2012.7759%2026.5496C12.3668%2026.7652%2011.982%2026.9398%2011.5122%2027.1258C10.8524%2027.387%2010.9578%2027.4938%2011.5529%2027.8405C12.62%2028.4444%2013.6889%2029.0459%2014.756%2029.6504C15.4585%2030.0888%2016.4024%2030.12%2017.1275%2029.7149C20.6861%2027.7538%2024.2436%2025.7904%2027.8029%2023.8293C28.5113%2023.468%2029.0049%2022.7202%2028.9999%2021.9327V10.0688C29.0068%209.31264%2028.5576%208.58227%2027.886%208.21259C24.3156%206.23947%2020.7435%204.27064%2017.1725%202.29872Z'%20fill='%238CC84B'/%3e%3cpath%20d='M22.5419%2011.2062C21.1452%2010.459%2019.4836%2010.4192%2017.9315%2010.5169C16.8102%2010.6277%2015.6309%2010.9371%2014.814%2011.7409C13.9761%2012.5489%2013.7937%2013.8537%2014.1917%2014.9085C14.4769%2015.6539%2015.1948%2016.1386%2015.9372%2016.395C16.8935%2016.7326%2017.8979%2016.837%2018.9026%2016.9414C19.819%2017.0366%2020.7357%2017.1319%2021.6165%2017.4042C21.9763%2017.5234%2022.3953%2017.7058%2022.5055%2018.0973C22.6073%2018.5609%2022.4957%2019.0998%2022.1193%2019.4219C20.9237%2020.3682%2017.5979%2020.2232%2016.4166%2019.4784C15.939%2019.1611%2015.7332%2018.5994%2015.6495%2018.0641C15.6402%2017.8973%2015.5059%2017.7443%2015.3248%2017.757C14.8713%2017.7516%2014.4178%2017.7528%2013.9643%2017.7564C13.8061%2017.7431%2013.6416%2017.8557%2013.6329%2018.0172C13.5397%2020.4689%2015.7914%2021.5377%2017.9039%2021.773C19.1108%2021.888%2020.3442%2021.8814%2021.5327%2021.6224C22.4261%2021.419%2023.3219%2021.0444%2023.9369%2020.3563C24.6953%2019.52%2024.8444%2018.2749%2024.5043%2017.2332C24.2443%2016.4559%2023.5012%2015.9573%2022.7416%2015.7008C21.7086%2015.3466%2020.4844%2015.1562%2019.5488%2015.0671C18.1889%2014.9376%2016.5729%2014.9905%2016.188%2014.0969C16.0345%2013.629%2016.1651%2013.048%2016.5951%2012.7602C17.7328%2011.9885%2020.0483%2012.091%2021.2265%2012.6675C21.7675%2012.9384%2022.081%2013.4948%2022.2104%2014.0565C22.2344%2014.2215%2022.3454%2014.3937%2022.5364%2014.3865C22.9868%2014.3955%2023.4372%2014.3889%2023.8875%2014.3895C24.0422%2014.4003%2024.2116%2014.313%2024.2418%2014.1546C24.2227%2012.9806%2023.6232%2011.7788%2022.5419%2011.2062Z'%20fill='%238CC84B'/%3e%3c/svg%3e"
+              alt="Node.js icon"
+              class="icon"
+            />
+            <p>Node.js</p>
+          </li>
+          <li>
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='36px'%20height='36px'%20viewBox='0%200%20640%20512'%20fill='%23EF8330'%3e%3c!--!Font%20Awesome%20Free%206.5.2%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license/free%20Copyright%202024%20Fonticons,%20Inc.--%3e%3cpath%20d='M407.9%20319.9l-230.8-2.9a4.6%204.6%200%200%201%20-3.6-1.9%204.6%204.6%200%200%201%20-.5-4.1%206.1%206.1%200%200%201%205.4-4.1L411.3%20303.9c27.6-1.3%2057.5-23.6%2068-50.8l13.3-34.5a7.9%207.9%200%200%200%20.5-2.9%207.7%207.7%200%200%200%20-.2-1.6A151.9%20151.9%200%200%200%20201.3%20198.4%2068.1%2068.1%200%200%200%2094.2%20269.6C41.9%20271.1%200%20313.7%200%20366.1a96.1%2096.1%200%200%200%201%2014%204.5%204.5%200%200%200%204.4%203.9l426.1%20.1c0%200%20.1%200%20.1%200a5.6%205.6%200%200%200%205.3-4l3.3-11.3c3.9-13.4%202.4-25.8-4.1-34.9C430.1%20325.4%20420.1%20320.5%20407.9%20319.9zM513.9%20221.1c-2.1%200-4.3%20.1-6.4%20.2a3.8%203.8%200%200%200%20-3.3%202.7l-9.1%2031.2c-3.9%2013.4-2.4%2025.8%204.1%2034.9%206%208.4%2016.1%2013.3%2028.2%2013.9l49.2%202.9a4.5%204.5%200%200%201%203.5%201.9%204.6%204.6%200%200%201%20.5%204.2%206.2%206.2%200%200%201%20-5.4%204.1l-51.1%202.9c-27.8%201.3-57.7%2023.6-68.1%2050.8l-3.7%209.6a2.7%202.7%200%200%200%202.4%203.7c0%200%20.1%200%20.1%200h175.9a4.7%204.7%200%200%200%204.5-3.4%20124.8%20124.8%200%200%200%204.7-34C640%20277.3%20583.5%20221.1%20513.9%20221.1z'/%3e%3c/svg%3e"
+              alt="Cloudflare icon"
+              class="icon"
+            />
+            <p>Cloudflare Worker</p>
+          </li>
+          <li>
+            <img
+              src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='36px'%20height='36px'%20viewBox='0%200%2032%2032'%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%3e%3ctitle%3efile_type_vite%3c/title%3e%3cpath%20d='M29.8836%206.146L16.7418%2029.6457c-.2714.4851-.9684.488-1.2439.0052L2.0956%206.1482c-.3-.5262.1498-1.1635.746-1.057l13.156%202.3516a.7144.7144%200%2000.2537-.0004l12.8808-2.3478c.5942-.1083%201.0463.5241.7515%201.0513z'%20fill='url(%23paint0_linear)'/%3e%3cpath%20d='M22.2644%202.0069l-9.7253%201.9056a.3571.3571%200%2000-.2879.3294l-.5982%2010.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044%203.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784%206.1877c-.08.387.4348.598.6495.2662L16.5173%2025%2024.442%209.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z'%20fill='url(%23paint1_linear)'/%3e%3cdefs%20id='defs50'%3e%3clinearGradient%20id='paint0_linear'%20x1='6.0002'%20y1='32.9999'%20x2='235'%20y2='344'%20gradientUnits='userSpaceOnUse'%20gradientTransform='matrix(.07142%200%200%20.07142%201.3398%201.8944)'%3e%3cstop%20stop-color='%2341D1FF'%20id='stop38'/%3e%3cstop%20offset='1'%20stop-color='%23BD34FE'%20id='stop40'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear'%20x1='194.651'%20y1='8.8182'%20x2='236.076'%20y2='292.989'%20gradientUnits='userSpaceOnUse'%20gradientTransform='matrix(.07142%200%200%20.07142%201.3398%201.8944)'%3e%3cstop%20stop-color='%23FFEA83'%20id='stop43'/%3e%3cstop%20offset='.0833'%20stop-color='%23FFDD35'%20id='stop45'/%3e%3cstop%20offset='1'%20stop-color='%23FFA800'%20id='stop47'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+              alt="Vite icon"
+              class="icon"
+            />
+            <p>Vite</p>
+          </li>
+          <li>
+            <img
+              src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='36px'%20height='36px'%20viewBox='0%20-12.5%20256%20256'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20preserveAspectRatio='xMidYMid'%3e%3cg%3e%3cpath%20d='M121.309004,84.6732585%20C123.402504,81.5874152%20125.694292,81.1950171%20127.553451,81.1950171%20C129.41261,81.1950171%20132.509843,81.5874152%20134.604162,84.6732585%20C151.106348,107.339593%20178.345607,152.492%20198.439108,185.798721%20C211.542532,207.519499%20221.6069,224.201947%20223.671721,226.324944%20C231.422996,234.294992%20242.053551,229.327949%20248.230809,220.287799%20C254.312201,211.387762%20256.000111,205.138399%20256.000111,198.471155%20C256.000111,193.930186%20167.895315,30.0714244%20159.022317,16.4322117%20C150.48936,3.31359639%20147.710044,0%20133.105527,0%20L122.176721,0%20C107.615631,0%20105.511479,3.31359639%2096.9777022,16.4322117%20C88.1055238,30.0714244%200.0001105152,193.930186%200.0001105152,198.471155%20C0.0001105152,205.138399%201.68839227,211.387762%207.76991495,220.287799%20C13.9471241,229.327949%2024.5775965,234.294992%2032.3286259,226.324944%20C34.3936934,224.201947%2044.4580605,207.519499%2057.5616485,185.798721%20C77.654822,152.492%20104.806818,107.339593%20121.309004,84.6732585%20Z'%20fill='%23000020'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"
+              alt="Expo icon"
+              class="icon"
+            />
+            <p>Expo/React Native</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="story">
+        <h3>Backstory</h3>
+        <p>
+          It started with a mix of curiosity and real-world frustration.
+          Fascinated by the latest developments in AI, my friend
+          <a
+            href="https://www.linkedin.com/in/takudzwa-gwindingwi-78b173a4/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Taku</a
+          >
+          and I were excited to <strong>learn more about LLMs</strong> — as
+          young software developers, we wanted to build something real,
+          something useful, something fun.<br /><br />
+          Tackling expat life in Berlin, Taku stumbled upon the
+          <strong>perfect challenge: German recycling rules!</strong> It was far
+          from trivial — proper waste sorting can save resources and protect the
+          environment. But how do we know we're doing it right? What are the
+          local guidelines? Where do we even find them?<br /><br />What if we
+          could just photograph a product and
+          <strong>instantly find out how to dispose</strong> of it properly?
+          That's how the journey began.
+        </p>
+      </section>
+
+      <!-- <section>
+        <h3>Key takeaways</h3>
+        <p>
+          My main goal behind building Trash Tutor was to get practice in
+          creating a production-ready application which uses LLMs.
+        </p>
+      </section> -->
+    </div>
+    <script>
+      function showVideo() {
+        var imageContainer = document.querySelector(".steps");
+        var video = document.getElementById("video");
+
+        imageContainer.style.display = "none";
+        video.style.display = "block";
+        video.src += "?autoplay=1"; // Append autoplay parameter to URL
+      }
+    </script>
+  </body>
+</html>
